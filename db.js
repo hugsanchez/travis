@@ -21,7 +21,7 @@ Actor.hasMany(Role);
 
 const syncAndSeed = async()=> {
   await conn.sync({ force: true });
-  await db.authenticate();
+  await conn.authenticate();
         console.log("Database Connected");
   const [sully, catchMeIfYouCan, truman, devil, hanks, linney, harris, leo, meryl] = await Promise.all([
     Movie.create({ title: "Sully" }),

@@ -3,7 +3,6 @@ const { syncAndSeed } = require('../db');
 
 const app = require('supertest')(require('../app'))
 
-//beforeEach(() => syncAndSeed());
 
 describe('Testing', () => {
     it('equals 2', ()=>{

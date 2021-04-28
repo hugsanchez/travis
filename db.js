@@ -2,15 +2,15 @@ const Sequelize = require('sequelize');
 const { STRING } = Sequelize;
 const conn = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost/acme_db');
 
-const Movie = conn.define('movie', {
+const Movie = conn.define("movie", {
   title: STRING
 });
 
-const Actor = conn.define('actor', {
+const Actor = conn.define("actor", {
   name: STRING
 });
 
-const Role = conn.define('role', {
+const Role = conn.define("role", {
   character: STRING
 });
 
